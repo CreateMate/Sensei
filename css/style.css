@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+ 
+}
+
+body {
+  background: #FFF;
+}
+
+h1 {
+ 
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+ 
+}
+.wrap-out{
+  margin-top:30px;
+  color: #999;
+  font-size: 70px;
+}
+.wrap-in{
+  color: #999;
+  font-size: 40px;
+}
+.wrap-in-lost-password
+{
+  font-size: 30px;
+}
+
+.login-form {
+  width: 350px;
+  padding: 10px 30px 40px 30px;
+  background: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border:1px solid #999;
+  margin: auto;
+ 
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 5px 7px 5px 15px;
+  background: #fff;
+  color: #666;
+  border: 2px solid #ddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.form-control:focus, .form-control:focus + .fa {
+  border-color: #10CE88;
+  color: #10CE88;
+}
+
+.form-group .fa {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  color: #999;
+}
+.topbar-moved
+{
+    margin-top:60px;
+}
+.log-status-pass.wrong-entry {
+  -moz-animation: wrong-log 0.3s;
+  -webkit-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+.log-status-user.wrong-entry {
+  -moz-animation: wrong-log 0.3s;
+  -webkit-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+.log-status-pass.wrong-entry .form-control, .wrong-entry .form-control + .fa {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+.log-status-user.wrong-entry .form-control, .wrong-entry .form-control + .fa {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+
+.log-btn {
+  background: #0AC986;
+  display: inline-b;
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.log-btn:hover
+{
+	cursor:pointer;
+}
+.link {
+  text-decoration: none;
+  color: #999;//#C6C6C6;
+  float: right;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #8C918F;
+}
+
+.alert {
+  display: none;
+  font-size: 12px;
+  color: #f00;
+  float: left;
+}
+
+@-moz-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@-webkit-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+/*--------------------------REGISTRACIJA---------------------------------*/
+.sensei{
+     font-family: 'Kaushan Script', cursive;
+}
+.sivo
+{
+    color: #666;
+}
+*{
+  font-family: arial;
+}
+.registracija
+{
+  font-size: 60px;
+}
+.greska {
+  font-size: 12px;
+  color: #f00;
+  float: left;
+}
+/*
+.wrap-out-margin-top
+{
+    margin-top:50px;
+}
+.topbar
+{
+  margin-top:3%;
+}
+#wrapper
+{
+  width: 350px;
+  padding: 10px 30px 40px 30px;
+  background: #eee;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+.wrapp
+{
+ -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+  background: #eee;
+  border:2px solid #999;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+*/
+/*--------------------------MOBILE RESPONSIVE----------------------------*/
+
+@media screen and (max-width: 349px)
+{
+  .wrap-out
+  {
+    display:none;
+  }
+  .login-form
+  {
+    width:92%;
+    padding: 10px 15px 20px 15px;
+    margin-top: 45%;
+
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+
+  .wrap-out
+  {
+    margin-top:70px;
+    font-size: 44px;
+  }
+  .wrap-in
+  {
+    font-size: 44px;
+  }
+  .login-form
+  {
+    width: 80%;
+    padding: 10px 15px 20px 15px;
+    margin-top:140px;
+  }
+  .registracija
+  {
+    display:none;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 451px) {
+
+  .wrap-out
+  {
+    margin-top:60px;
+    font-size: 50px;
+  }
+  .wrap-in
+  {
+    font-size: 38px;
+  }
+  .login-form
+  {
+    width: 72%;
+    padding: 10px 15px 20px 15px;
+    margin-top:140px;
+  }
+  .registracija
+  {
+    display:none;
+  }
+}
+@media screen and (max-width: 750px) and (min-width: 551px) {
+  .wrap-out
+  {
+    margin-top:50px;
+    font-size: 58px;
+  }
+  .registracija
+  {
+    font-size: 48px;
+  }
+}
+
+/*---------------------- ZA VISINU RESPONSIVE -------------------*/
+
+@media screen and (max-width: 750px) and (min-width: 551px) {
+ 
+}
